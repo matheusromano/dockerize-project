@@ -2,12 +2,12 @@ version: "3.8"
 
 services:
   app:
-    container_name: app-dev
-    image: app-dev
+    container_name: my-server
+    image: my-server
     build:
       context: .
       target: development
     volumes:
       - .:/app
     ports:
-      - 4000:4000
+      - 8000:8000
